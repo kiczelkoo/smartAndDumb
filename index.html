@@ -1,40 +1,127 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+    <title>reveal.js</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/night.css" id="theme">
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section>
+            <h3>Smart and dumb components</h3>
+            <h4>with Angular</h4>
+        </section>
+        <section>
+            <h3>What is all about?</h3>
+            <ul>
+                <li>Keep your components small and readable.</li>
+                <li>A lot of smart components?</li>
+                <li>Complexity!!!</li>
+            </ul>
+        </section>
+        <section>
+            <div class="r-hstack">
+                <div>
+                    <img src="img/brain2.png" alt="se" style="height: 100px" class="r-hstack">
+                            <ul>
+							<li>Application specific</li>
+							<li>Don't know how to present content</li>
+							<li>Retrieve data</li>
+							<li>Not reusable</li>
+						</ul>
+                        </div>
+						<div>
+                            <img src=" img/view.jpg" alt="se" style="height: 100px" class="r-hstack">
+                    <ul>
+                        <li>Not dumb but presentational</li>
+                        <li>Could be reusable</li>
+                        <li>Know how to display data</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h3>Where can you use it?</h3>
+        </section>
+        <section data-background-image="img/space.jpg" data-background-opacity="0.8">
+            <h3>Everywhere!</h3>
+        </section>
+        <section>
+            <div class="r-hstack">
+                <div>
+                    <img src="img/pros.png" alt="se" style="height: 100px" class="r-hstack">
+                    <ul>
+                        <li>Testing</li>
+                        <li>Maintenance</li>
+                        <li>Short components' code</li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="img/cons.png" alt="se" style="height: 100px" class="r-hstack">
+                    <ul>
+                        <li>A lot of components</li>
+                        <li>Communication in deep structure</li>
+                    </ul>
+                </div>
+            </div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+        </section>
+        <section>
+            <h3>Examples</h3>
+            <h4>in SeaExplorer application</h4>
+        </section>
+        <section>
+            <img src="img/se-happycase-alerts.PNG" alt="se">
+        </section>
+        <section>
+            <img src="img/se-happycase-alerts-smart.PNG" alt="se">
+        </section>
+        <section>
+            <img src="img/se-happycase-alerts-dumb.PNG" alt="se">
+        </section>
+        <section>
+            <img src="img/se-not-good-sorting.PNG" alt="se">
+        </section>
+        <section>
+            <img src="img/se-not-good-sorting-component.PNG" alt="se">
+        </section>
+        <section>
+            <img src="img/se-deep.PNG" alt="se">
+        </section>
+        <section>
+            <h3>Summary</h3>
+            <ul>
+                <li>Idea is easy</li>
+                <li>Temptation to make smart components</li>
+            </ul>
+        </section>
+    </div>
+</div>
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+<script src="dist/reveal.js"></script>
+<script src="plugin/notes/notes.js"></script>
+<script src="plugin/markdown/markdown.js"></script>
+<script src="plugin/highlight/highlight.js"></script>
+<script>
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
+    Reveal.initialize({
+        hash: true,
+        width: 1060,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+    });
+</script>
+</body>
 </html>
